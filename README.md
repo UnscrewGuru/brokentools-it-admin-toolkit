@@ -6,6 +6,11 @@ A free Windows 10/11 program for IT support: system repairs, disk cleanup, secur
 - **What every button does:** https://brokentools.org/en/toolkit-help
 - More free tools: https://brokentools.org
 
+## Screenshots
+![Repairs](docs/screenshot-repairs.png)
+![Software and startup](docs/screenshot-software.png)
+![Security and users](docs/screenshot-security.png)
+
 ## Safety
 Every button runs one fixed command chosen by the program. There is no free command line, and host/port boxes accept only safe characters. The program asks for administrator rights because repairs need them.
 
@@ -14,8 +19,8 @@ The program is new and not yet code-signed, so Windows may show a blue warning. 
 
 SHA-256:
 ```
-946168b677dc904296b00913bfccfee7af441c42d004ab227601633268d132b0  IT-Admin-Toolkit-2.3.0-Setup.exe
-5f3eb64586cb4c62d4d3d25addb815d6ff2d91a957b25c44c82aa63d4331f891  IT-Admin-Toolkit-2.3.0-Portable.exe
+946168b677dc904296b00913bfccfee7af441c42d004ab227601633268d132b0  IT-Admin-Toolkit-2_3_0-Setup.exe
+5f3eb64586cb4c62d4d3d25addb815d6ff2d91a957b25c44c82aa63d4331f891  IT-Admin-Toolkit-2_3_0-Portable.exe
 ```
 
 ## Build from source
