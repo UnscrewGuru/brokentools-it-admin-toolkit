@@ -1,0 +1,43 @@
+{
+  "name": "it-admin-toolkit",
+  "version": "2.3.0",
+  "description": "IT Admin Toolkit by BrokenTools",
+  "author": "BrokenTools",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win"
+  },
+  "build": {
+    "appId": "org.brokentools.itadmintoolkit",
+    "productName": "IT Admin Toolkit",
+    "compression": "maximum",
+    "electronLanguages": ["en-US", "el", "es", "ru"],
+    "files": ["main.js", "preload.js", "commands.js", "index.html", "style.css", "app.js", "i18n.js", "tools.js", "assets/**/*", "package.json"],
+    "directories": { "output": "release" },
+    "win": {
+      "target": ["nsis", "portable"],
+      "icon": "assets/icon.png",
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "portable": {
+      "requestExecutionLevel": "admin",
+      "artifactName": "IT-Admin-Toolkit-${version}-Portable.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "IT Admin Toolkit",
+      "artifactName": "IT-Admin-Toolkit-${version}-Setup.exe",
+      "installerLanguages": ["en_US", "el_GR", "es_ES", "ru_RU"],
+      "language": "1032"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  }
+}

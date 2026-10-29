@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IT Admin Toolkit by BrokenTools</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side">
+  <div class="brand">
+    <img src="assets/logo-64.png" width="40" height="40" alt="">
+    <div><div class="bn">BROKENTOOLS</div><div class="bs" id="brandSub"></div></div>
+  </div>
+  <div class="langs" id="langs" role="group" aria-label="Language">
+    <button data-l="el">EL</button><button data-l="en">EN</button><button data-l="es">ES</button><button data-l="ru">RU</button>
+  </div>
+  <nav id="nav"></nav>
+  <div class="sidefoot">
+    <button class="helpbtn" id="helpBtn"><span class="q">?</span><span id="helpLbl"></span></button>
+    <button class="logbtn" id="logBtn"></button>
+    <div class="stat"><span id="statLbl"></span><b id="statVal"></b></div>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="content" id="content"></div>
+  <div class="resizer" id="resizer"></div>
+  <section class="console" id="consolePanel">
+    <div class="conbar">
+      <div class="contitle"><span id="conTitle"></span><small id="conHint"></small></div>
+      <div class="conbtns">
+        <button class="cb stop" id="stopBtn"></button>
+        <button class="cb" id="expandBtn"></button>
+        <button class="cb" id="clearBtn"></button>
+      </div>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div class="panes" id="panes"><pre id="console"></pre></div>
+  </section>
+</main>
+<script src="i18n.js"></script>
+<script src="tools.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
