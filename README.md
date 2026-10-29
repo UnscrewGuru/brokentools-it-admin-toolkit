@@ -6,6 +6,9 @@ A free Windows 10/11 program for IT support: system repairs, disk cleanup, secur
 - **What every button does:** https://brokentools.org/en/toolkit-help
 - More free tools: https://brokentools.org
 
+ https://www.virustotal.com/gui/file/5f3eb64586cb4c62d4d3d25addb815d6ff2d91a957b25c44c82aa63d4331f891/behavior
+
+
 ## Screenshots
 ![Repairs](docs/screenshot-repairs.png)
 ![Software and startup](docs/screenshot-software.png)
